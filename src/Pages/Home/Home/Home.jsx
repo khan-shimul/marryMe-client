@@ -1,10 +1,9 @@
-import { Button } from "@mui/material";
-
 const Home = () => {
   return (
     <div>
-      <h3>This is Home Page</h3>
-      <Button variant="contained">Hello world</Button>;
+      <h1 className="text-3xl font-bold underline text-red-500">
+        Hello world!
+      </h1>
     </div>
   );
 };
