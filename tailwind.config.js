@@ -5,8 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: "Poppins, serif",
+        playfair: "Playfair Display, serif",
+        cinzel: "Cinzel Decorative, serif"
+      }
+    },
   },
-  plugins: [require('daisyui')],
+  // plugins: [require('daisyui')],
 }
 
