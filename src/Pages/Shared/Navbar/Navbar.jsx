@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router";
+import logo from "../../../assets/images/logo.png";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(null);
@@ -52,7 +53,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 font-poppins">
+    <div className="navbar bg-base-100 font-poppins uppercase font-medium py-5">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -77,7 +78,7 @@ const Navbar = () => {
             className={`${
               !clicked
                 ? "hidden"
-                : "menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                : "menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow "
             }`}
           >
             {navMenu}
@@ -86,9 +87,12 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">MarryMe</a>
+        <a className="btn btn-ghost text-xl">
+          <img className="h-10 md:h-12" src={logo} alt="" />
+          MarryMe
+        </a>
       </div>
-      <div className="navbar-center hidden hover:bg-none lg:flex">
+      <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navMenu}</ul>
       </div>
       <div className="navbar-end hidden md:flex">
