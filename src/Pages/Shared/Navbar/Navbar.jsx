@@ -53,7 +53,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 font-poppins uppercase font-medium py-5">
+    <div className="navbar font-poppins uppercase font-medium py-5 ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -89,7 +89,7 @@ const Navbar = () => {
         </div>
         <a className="btn btn-ghost text-xl">
           <img className="h-10 md:h-12" src={logo} alt="" />
-          MarryMe
+          <span className="text-pink-500">MarryMe</span>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
