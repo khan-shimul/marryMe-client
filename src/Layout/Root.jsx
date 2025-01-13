@@ -8,7 +8,7 @@ const Root = () => {
     location.pathname.includes("/login") ||
     location.pathname.includes("/register");
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="">
       {!shouldHide && <Navbar />}
       <Outlet />
       {!shouldHide && <Footer />}

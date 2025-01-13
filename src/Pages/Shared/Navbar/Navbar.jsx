@@ -54,7 +54,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar font-poppins uppercase font-medium py-5 ">
+    <div className="navbar font-poppins uppercase font-medium py-4 md:px-10 lg:px-20">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
