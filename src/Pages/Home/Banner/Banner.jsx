@@ -32,7 +32,7 @@ const Banner = () => {
             style={{
               backgroundImage: `url(${banner_1})`,
             }}
-            className="bg-cover bg-blend-multiply bg-no-repeat h-screen bg-black/50 animate-zoomIn"
+            className="bg-cover bg-blend-multiply bg-no-repeat h-screen bg-black/60 animate-zoomIn"
           ></div>
         </SwiperSlide>
       </Swiper>

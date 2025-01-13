@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router";
-import logo from "../../../assets/images/logo.png";
+// import logo from "../../../assets/images/logo/logo-b.png";
+import logo2 from "../../../assets/images/logo/logo-2.png";
+import Button from "../../../components/Button/Button";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(null);
@@ -54,7 +56,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar font-poppins uppercase font-medium py-4 md:px-10 lg:px-20">
+    <div className="navbar font-poppins uppercase font-medium py-5 md:px-10 lg:px-20">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -83,22 +85,24 @@ const Navbar = () => {
             }`}
           >
             {navMenu}
-            <Link to="login" className="btn btn-sm">
-              Login
+            <Link to="login">
+              <Button text="Join Now" />
             </Link>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">
-          <img className="h-10 md:h-12" src={logo} alt="" />
-          <span className="text-pink-500">MarryMe</span>
-        </a>
+        <Link to="/" className="text-2xl flex items-center gap-x-2">
+          <img className="h-8 md:h-14" src={logo2} alt="" />
+          <span className="text-[#B57F3E] font-cinzel font-semibold">
+            MarryMe
+          </span>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navMenu}</ul>
       </div>
       <div className="navbar-end hidden md:flex">
-        <Link to="login" className="btn">
-          Login
+        <Link to="login">
+          <Button text="Join Now" />
         </Link>
       </div>
     </div>
