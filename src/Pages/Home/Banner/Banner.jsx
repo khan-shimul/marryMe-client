@@ -40,11 +40,11 @@ const Banner = () => {
         <h5 className="text-2xl uppercase">
           <span className="text-5xl font-semibold">#1</span> Matrimony
         </h5>
-        <h2 className="text-7xl font-bold my-3 leading-tight">
+        <h2 className="text-5xl md:text-7xl font-bold my-3 leading-tight">
           Find your <br /> <span className="text-[#FF0000]">Right Match</span>{" "}
           here
         </h2>
-        <h5 className="font-poppins text-xl">
+        <h5 className="font-poppins text-lg font-light">
           Most trusted Matrimony Brand in the World.
         </h5>
       </div>
