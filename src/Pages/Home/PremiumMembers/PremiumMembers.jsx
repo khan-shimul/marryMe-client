@@ -20,7 +20,7 @@ const PremiumMembers = () => {
   });
   if (isPending) return <Spinner />;
   return (
-    <div className="bg-black p-5 lg:p-10 ">
+    <div className="bg-[#0c0101] p-5 lg:p-10 ">
       <div className="w-full md:w-2/3 lg:w-1/2 mx-auto text-center my-8">
         <h3 className="text-[#C48C46] text-3xl md:text-4xl font-cinzel font-bold mb-3">
           Premium Profiles
