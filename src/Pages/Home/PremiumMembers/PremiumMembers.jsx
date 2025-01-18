@@ -20,8 +20,8 @@ const PremiumMembers = () => {
   });
   if (isPending) return <Spinner />;
   return (
-    <div className="bg-[#0c0101] p-5 lg:p-10 ">
-      <div className="w-full md:w-2/3 lg:w-1/2 mx-auto text-center my-8">
+    <div className="bg-[#0c0101] p-5 lg:p-16 ">
+      <div className="w-full md:w-2/3 lg:w-1/2 mx-auto text-center mt-8">
         <h3 className="text-[#C48C46] text-3xl md:text-4xl font-cinzel font-bold mb-3">
           Premium Profiles
         </h3>
@@ -30,6 +30,15 @@ const PremiumMembers = () => {
           our Premium Members—your journey to finding love starts here.
         </p>
         <div className="h-2 w-28 bg-[#C48C46] mx-auto mt-5"></div>
+      </div>
+      <div className="my-5 w-full flex justify-center lg:justify-normal">
+        <select className="select select-error w-full max-w-xs bg-[#ffe3c0]">
+          <option disabled selected>
+            Find Your Person By Age
+          </option>
+          <option>Low to High</option>
+          <option>High to Low</option>
+        </select>
       </div>
       <Swiper
         // loop={Infinity}

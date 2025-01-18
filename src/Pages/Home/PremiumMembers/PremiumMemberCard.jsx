@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import { IoLocationOutline } from "react-icons/io5";
 import { LiaSdCardSolid } from "react-icons/lia";
+import { Link } from "react-router";
 
 const PremiumMemberCard = ({ premiumUser }) => {
-  console.log(premiumUser);
   const {
     biodataId,
     name,
@@ -56,9 +56,11 @@ const PremiumMemberCard = ({ premiumUser }) => {
             {occupation}
           </h5>
         </div>
-        <button className="px-8 py-3 text-white bg-gradient-to-r from-[#0e6ac0] to-[#9258fc] transition-all hover:scale-110 ease-in-out duration-500">
-          View Profile
-        </button>
+        <Link to={`user-details/${biodataId}`}>
+          <button className="px-8 py-3 w-full text-white bg-gradient-to-r from-[#0e6ac0] to-[#9258fc] transition-all hover:scale-110 ease-in-out duration-500">
+            View Profile
+          </button>
+        </Link>
       </div>
     </div>
   );

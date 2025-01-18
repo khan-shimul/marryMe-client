@@ -7,6 +7,7 @@ import Register from "../Pages/Registration/Register/Register";
 import NotFound from "../Pages/Shared/404/NotFound";
 import Biodatas from "../Pages/Biodatas/Biodatas";
 import ContactUs from "../Pages/ContactUs/ContactUs";
+import MemberDetails from "../Pages/MemberDetails/MemberDetails";
 
 const Routers = () => {
   return (
@@ -19,6 +20,7 @@ const Routers = () => {
         <Route path="about" element={<AboutUs />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="user-details/:id" element={<MemberDetails />} />
       </Route>
     </Routes>
   );
