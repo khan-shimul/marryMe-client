@@ -1,108 +1,122 @@
 [
-    {
-      "_id": "1",
-      "image": "https://i.ibb.co.com/4YjDSWX/1.jpg",
-      "marriageDate": "2024-10-15",
-      "rating": 5,
-      "successStory": "We found each other on this platform and it changed our lives forever. Thank you for making it happen!"
-    },
-    {
-      "_id": "2",
-      "image": "https://i.ibb.co.com/JBK45KV/2-1.jpg",
-      "marriageDate": "2023-06-25",
-      "rating": 4.5,
-      "successStory": "We connected instantly and got married within six months. Truly a wonderful experience!"
-    },
-    {
-      "_id": "3",
-      "image": "https://i.ibb.co.com/wp92nW1/3.jpg",
-      "marriageDate": "2025-01-10",
-      "rating": 5,
-      "successStory": "Your website brought us together, and we're so grateful. Thank you for making our dreams come true!"
-    },
-    {
-      "_id": "4",
-      "image": "https://i.ibb.co.com/3v89JkY/12.jpg",
-      "marriageDate": "2024-03-18",
-      "rating": 4,
-      "successStory": "The platform made it easy to meet someone special. We're very happy with the outcome."
-    },
-    {
-      "_id": "5",
-      "image": "https://i.ibb.co.com/Btj4cmv/13-1.jpg",
-      "marriageDate": "2023-12-05",
-      "rating": 4.8,
-      "successStory": "I was hesitant to try, but it worked out so well for us. The perfect match, thanks to this site!"
-    },
-    {
-        "_id": "6",
-        "image": "https://i.ibb.co.com/DW17NyP/10.jpg",
-        "marriageDate": "2024-09-30",
-        "rating": 4.7,
-        "successStory": "After a few months of talking, we realized we were meant to be. Thanks for helping us find each other!"
-      },
-      {
-        "_id": "7",
-        "image": "https://example.com/images/user7.jpg",
-        "marriageDate": "2023-11-20",
-        "rating": 5,
-        "successStory": "We are forever thankful to this site for connecting us. Our journey together has been amazing!"
-      },
-      {
-        "_id": "8",
-        "image": "https://example.com/images/user8.jpg",
-        "marriageDate": "2025-01-05",
-        "rating": 4.9,
-        "successStory": "Who knew online platforms could be this successful? So glad we took a chance on this site."
-      },
-      {
-        "_id": "9",
-        "image": "https://example.com/images/user9.jpg",
-        "marriageDate": "2023-08-15",
-        "rating": 4.3,
-        "successStory": "We had a great experience here. It took some time, but we found the perfect match!"
-      },
-      {
-        "_id": "10",
-        "image": "https://example.com/images/user10.jpg",
-        "marriageDate": "2024-07-04",
-        "rating": 5,
-        "successStory": "This site gave us the gift of love. We couldn’t have imagined a better partner."
-      },
-      {
-        "_id": "11",
-        "image": "https://example.com/images/user11.jpg",
-        "marriageDate": "2023-12-25",
-        "rating": 4.6,
-        "successStory": "From strangers to soulmates, all thanks to this amazing matrimony site!"
-      },
-      {
-        "_id": "12",
-        "image": "https://example.com/images/user12.jpg",
-        "marriageDate": "2024-05-12",
-        "rating": 4.2,
-        "successStory": "We met through this platform and have been inseparable ever since. Thank you for helping us start our journey."
-      },
-      {
-        "_id": "13",
-        "image": "https://example.com/images/user13.jpg",
-        "marriageDate": "2023-10-10",
-        "rating": 4.8,
-        "successStory": "This site was instrumental in bringing us together. A huge thanks for making our dream come true!"
-      },
-      {
-        "_id": "14",
-        "image": "https://example.com/images/user14.jpg",
-        "marriageDate": "2024-02-22",
-        "rating": 4.4,
-        "successStory": "We connected instantly and knew we were right for each other. Thank you for this incredible experience."
-      },
-      {
-        "_id": "15",
-        "image": "https://example.com/images/user15.jpg",
-        "marriageDate": "2025-01-01",
-        "rating": 5,
-        "successStory": "The perfect start to the new year with my soulmate, thanks to this matrimony site!"
-      }
-  ]
-  
+  {
+    "_id": "1",
+    "name": "John",
+    "image": "https://i.ibb.co.com/4YjDSWX/1.jpg",
+    "marriageDate": "2024-10-15",
+    "rating": 5,
+    "successStory": "We found each other on this platform and it changed our lives forever. Thank you for making it happen!"
+  },
+  {
+    "_id": "2",
+    "name": "Michael",
+    "image": "https://i.ibb.co.com/JBK45KV/2-1.jpg",
+    "marriageDate": "2023-06-25",
+    "rating": 4.5,
+    "successStory": "We connected instantly and got married within six months. Truly a wonderful experience!"
+  },
+  {
+    "_id": "3",
+    "name": "David",
+    "image": "https://i.ibb.co.com/wp92nW1/3.jpg",
+    "marriageDate": "2025-01-10",
+    "rating": 5,
+    "successStory": "Your website brought us together, and we're so grateful. Thank you for making our dreams come true!"
+  },
+  {
+    "_id": "4",
+    "name": "Chris",
+    "image": "https://i.ibb.co.com/3v89JkY/12.jpg",
+    "marriageDate": "2024-03-18",
+    "rating": 4,
+    "successStory": "The platform made it easy to meet someone special. We're very happy with the outcome."
+  },
+  {
+    "_id": "5",
+    "name": "Daniel",
+    "image": "https://i.ibb.co.com/Btj4cmv/13-1.jpg",
+    "marriageDate": "2023-12-05",
+    "rating": 4.8,
+    "successStory": "I was hesitant to try, but it worked out so well for us. The perfect match, thanks to this site!"
+  },
+  {
+    "_id": "6",
+    "name": "James",
+    "image": "https://i.ibb.co.com/DW17NyP/10.jpg",
+    "marriageDate": "2024-09-30",
+    "rating": 4.7,
+    "successStory": "After a few months of talking, we realized we were meant to be. Thanks for helping us find each other!"
+  },
+  {
+    "_id": "7",
+    "name": "Ryan",
+    "image": "https://example.com/images/user7.jpg",
+    "marriageDate": "2023-11-20",
+    "rating": 5,
+    "successStory": "We are forever thankful to this site for connecting us. Our journey together has been amazing!"
+  },
+  {
+    "_id": "8",
+    "name": "Ethan",
+    "image": "https://example.com/images/user8.jpg",
+    "marriageDate": "2025-01-05",
+    "rating": 4.9,
+    "successStory": "Who knew online platforms could be this successful? So glad we took a chance on this site."
+  },
+  {
+    "_id": "9",
+    "name": "Matthew",
+    "image": "https://example.com/images/user9.jpg",
+    "marriageDate": "2023-08-15",
+    "rating": 4.3,
+    "successStory": "We had a great experience here. It took some time, but we found the perfect match!"
+  },
+  {
+    "_id": "10",
+    "name": "Lucas",
+    "image": "https://example.com/images/user10.jpg",
+    "marriageDate": "2024-07-04",
+    "rating": 5,
+    "successStory": "This site gave us the gift of love. We couldn’t have imagined a better partner."
+  },
+  {
+    "_id": "11",
+    "name": "Benjamin",
+    "image": "https://example.com/images/user11.jpg",
+    "marriageDate": "2023-12-25",
+    "rating": 4.6,
+    "successStory": "From strangers to soulmates, all thanks to this amazing matrimony site!"
+  },
+  {
+    "_id": "12",
+    "name": "Nathan",
+    "image": "https://example.com/images/user12.jpg",
+    "marriageDate": "2024-05-12",
+    "rating": 4.2,
+    "successStory": "We met through this platform and have been inseparable ever since. Thank you for helping us start our journey."
+  },
+  {
+    "_id": "13",
+    "name": "Henry",
+    "image": "https://example.com/images/user13.jpg",
+    "marriageDate": "2023-10-10",
+    "rating": 4.8,
+    "successStory": "This site was instrumental in bringing us together. A huge thanks for making our dream come true!"
+  },
+  {
+    "_id": "14",
+    "name": "Alexander",
+    "image": "https://example.com/images/user14.jpg",
+    "marriageDate": "2024-02-22",
+    "rating": 4.4,
+    "successStory": "We connected instantly and knew we were right for each other. Thank you for this incredible experience."
+  },
+  {
+    "_id": "15",
+    "name": "William",
+    "image": "https://example.com/images/user15.jpg",
+    "marriageDate": "2025-01-01",
+    "rating": 5,
+    "successStory": "The perfect start to the new year with my soulmate, thanks to this matrimony site!"
+  }
+]
