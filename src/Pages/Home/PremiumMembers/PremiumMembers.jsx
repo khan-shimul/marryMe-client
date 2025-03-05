@@ -20,7 +20,7 @@ const PremiumMembers = () => {
   });
   if (isPending) return <Spinner />;
   return (
-    <div className="bg-[#0c0101] p-5 lg:p-16 ">
+    <div className="bg-[#0c0101] p-5 lg:p-16">
       <div className="w-full md:w-2/3 lg:w-1/2 mx-auto text-center mt-5">
         <h3 className="text-[#C48C46] text-3xl md:text-4xl font-cinzel font-bold mb-3">
           Premium Profiles
@@ -32,7 +32,10 @@ const PremiumMembers = () => {
         <div className="h-2 w-28 bg-[#C48C46] mx-auto mt-5"></div>
       </div>
       <div className="my-8 w-full flex justify-center lg:justify-normal">
-        <select className="select select-error w-full max-w-xs bg-[#ffe3c0]">
+        <select
+          defaultValue={"low"}
+          className="select select-error w-full max-w-xs bg-[#ffe3c0]"
+        >
           <option disabled selected>
             Find Your Person By Age
           </option>
