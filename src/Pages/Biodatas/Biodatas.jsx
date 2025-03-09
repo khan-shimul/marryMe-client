@@ -1,4 +1,18 @@
+import { useQuery } from "@tanstack/react-query";
+import Spinner from "../../components/Spinner/Spinner";
+import axios from "axios";
+import SingleBiodata from "./SingleBiodata";
+
 const Biodatas = () => {
+  const { isPending, data: biodatas } = useQuery({
+    queryKey: ["biodatas"],
+    queryFn: async () => {
+      const res = await axios.get("/fakeDB.json");
+      return res.data;
+    },
+  });
+  if (isPending) return <Spinner />;
+  console.log(isPending, biodatas);
   return (
     <section className="bg-[#FEFBF1]">
       <div className="max-w-7xl mx-auto p-5 flex flex-col lg:flex-row gap-5 lg:gap-10">
@@ -43,8 +57,19 @@ const Biodatas = () => {
             </select>
           </div>
         </div>
-        <div className="flex-grow border-2">
-          <h1>Profiles</h1>
+        <div className="flex-grow">
+          <h1 className="font-playfair text-2xl font-medium border-b pb-2">
+            Showing{" "}
+            <span className="font-poppins font-semibold">
+              {biodatas.length}
+            </span>{" "}
+            profiles
+          </h1>
+          <div>
+            {biodatas.map((biodata) => (
+              <SingleBiodata key={biodata.biodataId} biodata={biodata} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
