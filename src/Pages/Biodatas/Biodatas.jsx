@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import Spinner from "../../components/Spinner/Spinner";
 import axios from "axios";
 import SingleBiodata from "./SingleBiodata";
+import { Helmet } from "react-helmet-async";
 
 const Biodatas = () => {
   const { isPending, data: biodatas } = useQuery({
@@ -12,9 +13,12 @@ const Biodatas = () => {
     },
   });
   if (isPending) return <Spinner />;
-  console.log(isPending, biodatas);
+
   return (
     <section className="bg-[#FEFBF1]">
+      <Helmet>
+        <title>Marry-Me | Biodatas</title>
+      </Helmet>
       <div className="max-w-7xl mx-auto p-5 flex flex-col lg:flex-row gap-5 lg:gap-10">
         <div className="lg:w-96 border bg-white rounded-md p-8 font-poppins flex flex-wrap flex-row lg:flex-col gap-x-2">
           {/* Looking for */}
