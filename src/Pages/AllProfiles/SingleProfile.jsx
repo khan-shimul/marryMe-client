@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaRegIdBadge } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
 
 const SingleProfile = ({ biodata }) => {
   const {
@@ -15,13 +16,17 @@ const SingleProfile = ({ biodata }) => {
   console.log(biodata);
   return (
     <div className="card rounded-md card-side bg-white shadow-lg mb-5 mt-10 flex flex-col md:flex-row">
-      <figure className="p-2">
+      <figure className="p-2 relative">
         <img
           className="h-full rounded-md w-full md:w-80 transition-all duration-700 ease-in-out hover:scale-125"
           src={profileImage}
           alt="profile-image"
         />
       </figure>
+      <MdOutlineFavoriteBorder
+        title="Add to favorite"
+        className="absolute top-5 left-5 text-3xl cursor-pointer text-white"
+      />
       <div className="card-body">
         <div className="flex items-center justify-between">
           <div>

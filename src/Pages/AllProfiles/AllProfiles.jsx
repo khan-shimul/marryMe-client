@@ -1,25 +1,16 @@
 import Spinner from "../../components/Spinner/Spinner";
 
 import SingleProfile from "./SingleProfile";
-import { Helmet } from "react-helmet-async";
 import useProfiles from "../../hooks/useProfiles";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 const AllProfiles = () => {
-  // const { isPending, data: biodatas } = useQuery({
-  //   queryKey: ["biodatas"],
-  //   queryFn: async () => {
-  //     const res = await axios.get("/fakeDB.json");
-  //     return res.data;
-  //   },
-  // });
   const [isPending, allProfiles] = useProfiles();
   if (isPending) return <Spinner />;
 
   return (
     <section className="bg-[#FEFBF1]">
-      <Helmet>
-        <title>Marry-Me | All Profiles</title>
-      </Helmet>
+      <PageTitle title="All Profiles" />
       <div className="max-w-7xl mx-auto p-5 flex flex-col lg:flex-row gap-5 lg:gap-10">
         <div className="lg:w-96 border bg-white rounded-md p-8 font-poppins flex flex-wrap flex-row lg:flex-col gap-x-5 lg:h-72 lg:sticky top-10">
           {/* Looking for */}
