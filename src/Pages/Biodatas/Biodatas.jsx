@@ -17,10 +17,10 @@ const Biodatas = () => {
   return (
     <section className="bg-[#FEFBF1]">
       <Helmet>
-        <title>Marry-Me | Biodatas</title>
+        <title>Marry-Me | All Profiles</title>
       </Helmet>
       <div className="max-w-7xl mx-auto p-5 flex flex-col lg:flex-row gap-5 lg:gap-10">
-        <div className="lg:w-96 border bg-white rounded-md p-8 font-poppins flex flex-wrap flex-row lg:flex-col gap-x-2">
+        <div className="lg:w-96 border bg-white rounded-md p-8 font-poppins flex flex-wrap flex-row lg:flex-col gap-x-5 lg:h-72 lg:sticky top-10">
           {/* Looking for */}
           <div>
             <select
