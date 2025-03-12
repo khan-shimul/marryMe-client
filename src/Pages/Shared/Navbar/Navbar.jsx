@@ -28,7 +28,7 @@ const Navbar = () => {
           }
           onClick={() => setClicked(!clicked)}
         >
-          Biodatas
+          All Profiles
         </NavLink>
       </li>
       <li>
