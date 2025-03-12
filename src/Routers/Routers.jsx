@@ -5,9 +5,9 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import Login from "../Pages/Registration/Login/Login";
 import Register from "../Pages/Registration/Register/Register";
 import NotFound from "../Pages/Shared/404/NotFound";
-import Biodatas from "../Pages/Biodatas/Biodatas";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import MemberDetails from "../Pages/MemberDetails/MemberDetails";
+import AllProfiles from "../Pages/AllProfiles/AllProfiles";
 
 const Routers = () => {
   return (
@@ -15,12 +15,12 @@ const Routers = () => {
       <Route path="*" element={<NotFound />} />
       <Route path="/" element={<Root />}>
         <Route index element={<Home />} />
-        <Route path="bio-data" element={<Biodatas />} />
+        <Route path="all-profiles" element={<AllProfiles />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
-        <Route path="user-details/:id" element={<MemberDetails />} />
+        <Route path="profile-details/:id" element={<MemberDetails />} />
       </Route>
     </Routes>
   );

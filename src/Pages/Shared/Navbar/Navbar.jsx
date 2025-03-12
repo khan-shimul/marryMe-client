@@ -22,7 +22,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="bio-data"
+          to="all-profiles"
           className={({ isActive }) =>
             isActive ? "text-red-500" : "text-[#68471F]"
           }

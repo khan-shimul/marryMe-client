@@ -1,5 +1,3 @@
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 import Spinner from "../../../components/Spinner/Spinner";
 import PremiumMemberCard from "./PremiumMemberCard";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,17 +6,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { FreeMode, Pagination, Navigation, Autoplay } from "swiper/modules";
+import useProfiles from "../../../hooks/useProfiles";
 
 const PremiumMembers = () => {
-  const { data: premiumMembers, isPending } = useQuery({
-    queryKey: ["premiumMembers"],
-    queryFn: async () => {
-      const res = await axios.get("/fakeDB.json");
-      const premium = res.data.filter((user) => user.userType === "premium");
-      return premium;
-    },
-  });
+  const [isPending, allProfiles] = useProfiles();
   if (isPending) return <Spinner />;
+  const premiumProfiles = allProfiles.filter(
+    (profile) => profile.userType === "premium"
+  );
   return (
     <div className="bg-[#0c0101] p-5 lg:p-16">
       <div className="w-full md:w-2/3 lg:w-1/2 mx-auto text-center mt-5">
@@ -31,14 +26,12 @@ const PremiumMembers = () => {
         </p>
         <div className="h-2 w-28 bg-[#C48C46] mx-auto mt-5"></div>
       </div>
-      <div className="my-8 w-full flex justify-center lg:justify-normal">
+      <div className="my-8 w-full flex justify-center lg:justify-normal font-poppins">
         <select
-          defaultValue={"low"}
+          defaultValue="Find Your Person By Age"
           className="select select-error w-full max-w-xs bg-[#ffe3c0]"
         >
-          <option disabled selected>
-            Find Your Person By Age
-          </option>
+          <option disabled>Find Your Person By Age</option>
           <option>Low to High</option>
           <option>High to Low</option>
         </select>
@@ -71,7 +64,7 @@ const PremiumMembers = () => {
         }}
         className="mySwiper"
       >
-        {premiumMembers.map((premiumMember) => (
+        {premiumProfiles.map((premiumMember) => (
           <SwiperSlide key={premiumMember.biodataId}>
             <PremiumMemberCard premiumUser={premiumMember} />
           </SwiperSlide>

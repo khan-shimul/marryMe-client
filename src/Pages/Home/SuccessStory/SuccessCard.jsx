@@ -4,7 +4,6 @@ import "@smastrom/react-rating/style.css";
 
 const SuccessCard = ({ review }) => {
   const { image, successStory, name, marriageDate, rating } = review;
-  console.log(review.rating);
   return (
     <div className="card border bg-[#FEFCF7] relative">
       <div className="card-body">

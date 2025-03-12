@@ -1,17 +1,18 @@
-import { useQuery } from "@tanstack/react-query";
 import Spinner from "../../components/Spinner/Spinner";
-import axios from "axios";
-import SingleBiodata from "./SingleBiodata";
-import { Helmet } from "react-helmet-async";
 
-const Biodatas = () => {
-  const { isPending, data: biodatas } = useQuery({
-    queryKey: ["biodatas"],
-    queryFn: async () => {
-      const res = await axios.get("/fakeDB.json");
-      return res.data;
-    },
-  });
+import SingleProfile from "./SingleProfile";
+import { Helmet } from "react-helmet-async";
+import useProfiles from "../../hooks/useProfiles";
+
+const AllProfiles = () => {
+  // const { isPending, data: biodatas } = useQuery({
+  //   queryKey: ["biodatas"],
+  //   queryFn: async () => {
+  //     const res = await axios.get("/fakeDB.json");
+  //     return res.data;
+  //   },
+  // });
+  const [isPending, allProfiles] = useProfiles();
   if (isPending) return <Spinner />;
 
   return (
@@ -65,13 +66,13 @@ const Biodatas = () => {
           <h1 className="font-playfair text-2xl font-medium border-b pb-2">
             Showing{" "}
             <span className="font-poppins font-semibold">
-              {biodatas.length}
+              {allProfiles.length}
             </span>{" "}
             profiles
           </h1>
           <div>
-            {biodatas.map((biodata) => (
-              <SingleBiodata key={biodata.biodataId} biodata={biodata} />
+            {allProfiles.map((profile) => (
+              <SingleProfile key={profile.biodataId} biodata={profile} />
             ))}
           </div>
         </div>
@@ -80,4 +81,4 @@ const Biodatas = () => {
   );
 };
 
-export default Biodatas;
+export default AllProfiles;

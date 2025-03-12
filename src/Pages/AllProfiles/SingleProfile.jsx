@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaRegIdBadge } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 
-const SingleBiodata = ({ biodata }) => {
+const SingleProfile = ({ biodata }) => {
   const {
     profileImage,
     biodataId,
@@ -59,8 +59,8 @@ const SingleBiodata = ({ biodata }) => {
   );
 };
 
-SingleBiodata.propTypes = {
+SingleProfile.propTypes = {
   biodata: PropTypes.object.isRequired,
 };
 
-export default SingleBiodata;
+export default SingleProfile;

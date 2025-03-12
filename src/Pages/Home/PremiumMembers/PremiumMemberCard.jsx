@@ -56,7 +56,7 @@ const PremiumMemberCard = ({ premiumUser }) => {
             {occupation}
           </h5>
         </div>
-        <Link to={`user-details/${biodataId}`}>
+        <Link to={`profile-details/${biodataId}`}>
           <button className="px-8 py-3 w-full text-white bg-gradient-to-r from-[#0e6ac0] to-[#9258fc] transition-all hover:scale-110 ease-in-out duration-500">
             View Profile
           </button>
