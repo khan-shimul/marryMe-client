@@ -21,6 +21,10 @@ const Routers = () => {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="profile-details/:id" element={<MemberDetails />} />
+        <Route
+          path="all-profiles/profile-details/:id"
+          element={<MemberDetails />}
+        />
       </Route>
     </Routes>
   );

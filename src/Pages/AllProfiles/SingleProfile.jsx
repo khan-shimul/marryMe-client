@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaRegIdBadge } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { Link } from "react-router";
 
 const SingleProfile = ({ biodata }) => {
   const {
@@ -56,9 +57,11 @@ const SingleProfile = ({ biodata }) => {
           </span>
           {parmanentDivision}
         </h4>
-        <button className="btn btn-outline btn-secondary mt-5 transition-all duration-200 ease-linear">
-          View Profile
-        </button>
+        <Link to={`profile-details/${biodataId}`}>
+          <button className="btn w-full btn-outline btn-secondary mt-5 transition-all duration-200 ease-linear">
+            View Profile
+          </button>
+        </Link>
       </div>
     </div>
   );
